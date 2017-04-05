@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Actvity.MainActivity1"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/backgrund_2"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/button_black"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/iconbackicon"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/buttonNew"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/start_new"
+            android:background="@android:color/transparent"
+            android:src="@drawable/new_pic"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/brush"
+            android:background="@android:color/transparent"
+            android:src="@drawable/brushpaint" />
+
+        <ImageButton
+            android:id="@+id/buttonErase"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/erase"
+            android:background="@android:color/transparent"
+            android:src="@drawable/erasericon"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonSave"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/saveicon" />
+        <ImageButton
+            android:id="@+id/buttonsound"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_launchermedia" />
+        <ImageButton
+            android:id="@+id/buttonVDO"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_launchervdo" />
+
+
+        <ImageButton
+            android:id="@+id/button_black_page"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bt_back"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/iconnext"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    <com.wordpress.priyankvex.paintapp.DrawingView.DrawingViewEN2
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        />
+
+    <!-- Color pallet -->
+    <LinearLayout
+        android:id="@+id/paint_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/brush" />
+
+        <ImageButton
+
+            android:id="@+id/button_home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/save"
+            android:src="@drawable/home3"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/brush" />
+
+        <ImageButton
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:layout_margin="2dp"
+            android:background="@color/skin"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/pallet"
+            android:tag="@color/skin" />
+
+        <ImageButton
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:layout_margin="2dp"
+            android:background="@color/black"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/pallet"
+            android:tag="@color/black" />
+
+        <ImageButton
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:layout_margin="2dp"
+            android:background="@color/red"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/pallet"
+            android:tag="@color/red" />
+
+        <ImageButton
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:layout_margin="2dp"
+            android:background="@color/green"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/pallet"
+            android:tag="@color/green" />
+
+        <ImageButton
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:layout_margin="2dp"
+            android:background="@color/blue"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/pallet"
+            android:tag="@color/blue" />
+
+        <ImageButton
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:layout_margin="2dp"
+            android:background="@color/yellow"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/pallet"
+            android:tag="@color/yellow" />
+
+
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/brush" />
+
+
+
+
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:background="@android:color/transparent"
+            android:src="@drawable/brush" />
+
+
+
+
+        <ImageButton
+
+
+            android:id="@+id/bt_button_flase_ab"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_flase"
+            android:visibility="invisible"
+            />
+
+
+        <ImageButton
+            android:id="@+id/bt_button_ture_ab"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_ture"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

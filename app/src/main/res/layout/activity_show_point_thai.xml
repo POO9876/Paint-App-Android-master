@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Actvity.ShowPointThai">
+
+
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:text="ลำดับที่"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:text="ชื่อ"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:text="ตัวอักษร"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:text="คะแนน"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+    </TableRow>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scrollbars="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tableRow1" />
+
+    <TextView
+        android:id="@+id/point_1"
+        android:layout_below="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/actionbar"
+        android:text="คะแนนรวมทั้งหมด "/>
+
+    <TextView
+        android:id="@+id/point_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recycler_view"
+        android:gravity="right|center"
+        android:textColor="@color/red"
+        android:textSize="22dp"
+        android:layout_marginRight="100dp"
+        android:text="5555"/>
+
+
+
+
+
+
+
+</RelativeLayout>

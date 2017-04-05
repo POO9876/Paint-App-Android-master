@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">ฝึกเขียน ก ไก่-ABC</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+
+
+    <string name="action_refresh">Settings</string>
+    <string name="action_new">Settings</string>
+    <string name="logo_desc">App logo</string>
+    <string name="country_name">Nigeria</string>
+
+
+    //ก*ฮ
+    <string name="k_1">ก</string>
+    <string name="k_2">ข</string>
+    <string name="k_3">ฃ</string>
+    <string name="k_4">ค</string>
+    <string name="k_5">ฅ</string>
+    <string name="k_6">ฆ</string>
+    <string name="k_7">ง</string>
+    <string name="k_8">จ</string>
+    <string name="k_9">ฉ</string>
+    <string name="k_10">ช</string>
+
+    <string name="k_11">ซ</string>
+    <string name="k_12">ณ</string>
+    <string name="k_13">ญ</string>
+    <string name="k_14">ฎ</string>
+    <string name="k_15">ฏ</string>
+    <string name="k_16">ฐ</string>
+    <string name="k_17">ฑ</string>
+    <string name="k_18">ฒ</string>
+    <string name="k_19">ณ</string>
+    <string name="k_20">ด</string>
+
+    <string name="k_21">ต</string>
+    <string name="k_22">ถ</string>
+    <string name="k_23">ท</string>
+    <string name="k_24">ธ</string>
+    <string name="k_25">น</string>
+    <string name="k_26">บ</string>
+    <string name="k_27">ป</string>
+    <string name="k_28">ผ</string>
+    <string name="k_29">ฝ</string>
+    <string name="k_30">พ</string>
+
+    <string name="k_31">ฟ</string>
+    <string name="k_32">ภ</string>
+    <string name="k_33">ม</string>
+    <string name="k_34">ย</string>
+    <string name="k_35">ร</string>
+    <string name="k_36">ล</string>
+    <string name="k_37">ว</string>
+    <string name="k_38">ศ</string>
+    <string name="k_39">ษ</string>
+    <string name="k_40">ส</string>
+    <string name="k_41">ห</string>
+    <string name="k_42">ฬ</string>
+    <string name="k_43">อ</string>
+    <string name="k_44">ฮ</string>
+
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="alpha_numeric">Alpha Numeric (Max Length 12)</string>
+    <string name="submit">Submit</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="terms_and_conditions">I agree to the terms and conditions</string>
+    <string name="max_value">Max Value (10)</string>
+    <string name="min_value">Min Value(2)</string>
+    <string name="value_range">Value between 2 and 10</string>
+    <string name="first_field">First field to verify</string>
+    <string name="spinner_title">Select Category</string>
+
+
+</resources>
